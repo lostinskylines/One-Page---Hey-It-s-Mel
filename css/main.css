@@ -33,11 +33,15 @@ img {
 /*******************************************/
 
 body {
-    font-family: 'Edmondsans', sans-serif;
     color: #CEFECE;
-    font-size: 24px;
+    font-size: 22px;
     background-color: #0033FF;
     font-weight: 200;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Edmondsans', sans-serif;
+    margin: 0 auto;
 }
 
 h1 {
@@ -50,10 +54,32 @@ h2 {
     text-transform: lowercase;
 }
 
+h3 {
+    font-size: 1.75em;
+    display: inline-block;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    
+}
+
 a {
     font-weight:600;
     color: #FB62F6;
     text-decoration: none;    
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.15px;
+    line-height: 1.25;
 }
 
 /******************************************
@@ -62,37 +88,91 @@ a {
 
 
 .site-header {
-    margin: 2.5em;
+    margin: 1em 2.5em;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
-    margin-bottom: 3em;
 }
 
-.wrapper {
-    margin: 1em;
+.site-content {
+    display: flex;
+    position: relative;
 }
 
-.row-wrap1 {
+.gist-blurb {
+    width:85%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #CEFECE;
+    color: #0033EE;
+    z-index: 10;
+}
+
+.gist-blurb p {
+    padding: 1em 2em;
+}
+
+.wrap-section-1 {
+    position:relative;
+}
+
+.wrap-section-1 img {
+    margin-top: -2.5em;
+}
+
+.job-history {
     display: grid;
-    grid-auto-columns: 70% auto;
-    grid-auto-flow: column;
-    grid-gap: 1em;
+    position: absolute;
+    left: 2em;
+    right: 2em;
 }
 
-.left-block {
-  
+li { list-style: none;}
+
+.job-info {
+    width: 90%;
+    padding: 0 1em;
+    list-style: none;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 1em;
 }
 
-.right-block {
-    
+.job-info h5 {
+    padding-top: 0.5em;
+    font-size: 1.25em;
 }
 
+.job-role {
+    margin-right: 4em;
+}
 
+.job-role span {
+    font-weight: 200;
+    float: right;
+    padding: 0.25em;
+    margin: 0.25em;
+    display: inline-block;
+    color: #0033EE;
+    background-color: #CEFECE;
+}
 
 .site-footer {
 
+}
+
+/*
+@media screen and (min-width:888px) {
+
+    .gist-blurb {
+        width: 70%;
+        margin: 0 auto;
+        position:relative;
+    }
+    
+    .img-wrap {
+        padding: 6em 0;
+    }
+*/
 }
 
 /******************************************
