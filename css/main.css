@@ -1,0 +1,107 @@
+/* 
+Project Name: One Page Shopify Application
+Client: Myself
+Author: Melissa Mannion
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/*  #0033FF - vibrant blue
+    #CEFECE - light pale green
+    #FF9F1C - bright orange
+    #000500 - not quite black
+    #FFFFFF - white
+    #F2FF49 - intense yellow
+    #FF47DA - vibrant pink
+*/
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+img {
+	max-width:100%;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+body {
+    font-family: 'Edmondsans', sans-serif;
+    color: #CEFECE;
+    font-size: 24px;
+    background-color: #0033FF;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    text-transform: lowercase;
+}
+
+a {
+    font-weight:600;
+    color: #FB62F6;
+    text-decoration: none;    
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.site-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.site-header {
+
+}
+.site-content {
+
+}
+.site-footer {
+
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
