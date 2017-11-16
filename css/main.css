@@ -61,17 +61,35 @@ a {
 /*******************************************/
 
 .site-container {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
+    margin: 2.5em;
 }
 
 .site-header {
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-bottom: 0.2em solid #CEFECE;
+    margin-bottom: 3em;
 }
+
 .site-content {
-
+    display: flex;
+    justify-content: space-between;
 }
+
+.info-wrap { 
+    margin: 10px;
+}
+
+#biog {
+    flex-grow: 2;
+}
+
+#career {
+    flex-grow: 1;
+}
+
 .site-footer {
 
 }
