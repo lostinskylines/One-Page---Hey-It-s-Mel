@@ -60,35 +60,36 @@ a {
 /* LAYOUT                   
 /*******************************************/
 
-.site-container {
-    margin: 2.5em;
-}
 
 .site-header {
+    margin: 2.5em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    border-bottom: 0.2em solid #CEFECE;
     margin-bottom: 3em;
 }
 
-.site-content {
-    display: flex;
-    justify-content: space-between;
+.wrapper {
+    margin: 1em;
 }
 
-.info-wrap { 
-    margin: 10px;
+.row-wrap1 {
+    display: grid;
+    grid-auto-columns: 70% auto;
+    grid-auto-flow: column;
+    grid-gap: 1em;
 }
 
-#biog {
-    flex-grow: 2;
+.left-block {
+  
 }
 
-#career {
-    flex-grow: 1;
+.right-block {
+    
 }
+
+
 
 .site-footer {
 
