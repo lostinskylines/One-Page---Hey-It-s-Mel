@@ -149,8 +149,17 @@ p {
     padding: 0.5em;
 }
 
+.design-example-blackfriday2 {
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
 
-@media screen and (max-width:900px) {
+.job-history-wrap h3 {
+    margin-left: 0.5em;
+}
+
+
+@media screen and (max-width:1023px) {
     .intro {
         width: 100%;
         margin: 0 auto;
@@ -161,48 +170,6 @@ p {
     }
     
     
-}
-
-/****************************************
-/*EXPIRED FOR NOW*
-/****************************************/
-
-
-.job-history {
-    display: grid;
-    position: absolute;
-    left: 2em;
-    right: 2em;
-}
-
-li { list-style: none;}
-
-.job-info {
-    width: 90%;
-    padding: 0 1em;
-    list-style: none;
-    font-size: 18px;
-    margin: auto;
-    margin-top: 1em;
-}
-
-.job-info h5 {
-    padding-top: 0.5em;
-    font-size: 1.25em;
-}
-
-.job-role {
-    margin-right: 4em;
-}
-
-.job-role span {
-    font-weight: 200;
-    float: right;
-    padding: 0.25em;
-    margin: 0.25em;
-    display: inline-block;
-    color: #0033EE;
-    background-color: #CEFECE;
 }
 
 
