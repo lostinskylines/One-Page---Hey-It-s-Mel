@@ -41,7 +41,7 @@ body {
     color: #CEFECE;
     font-size: 22px;
     background-color: #0033FF;
-    font-weight: 200;
+    font-weight: 300;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -82,6 +82,11 @@ a {
     text-decoration: none;    
 }
 
+a:hover {
+    color:#CEFECE;
+    background-color: #FB62F6;
+}
+
 p {
     font-weight: 200;
     letter-spacing: 1.15px;
@@ -92,7 +97,15 @@ p {
 /******************************************
 /* LAYOUT                   
 /*******************************************/
+.fadeinleft {
+opacity:0;
+margin-left:-300px;	
+max-width:100%;
+}
 
+.fadein {
+    opacity: 0;
+}
 
 .site-header {
     margin: 1em 2.5em;
@@ -105,30 +118,47 @@ p {
     margin:auto;
 }
 
+.gmg-intro {
+    box-shadow: 10px 10px #FB62F6;
+    margin: 2em 1em;
+    background-color: #CEFECE;
+}
+
+.gmg-intro p {
+    color: #0033FF;
+    margin:0;
+}
+
+.intro-wrap {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
 .image-wrap {
     height: 100%;
-}
-
-.rectangle {
-    background-color: pink;
-    display: block;
-    
-}
-
-.rectangle img {
-    margin-top: 1em;
-    margin-left: 1em;
     margin-bottom: 1em;
+}
+
+.image-wrap img {
+    box-shadow: 10px 10px 0 #CEFEDE;
 }
 
 .intro {
     background-color: #CEFECE;
     color: #0033EE;
     margin-left: 2em;
+    box-shadow: 10px 10px #FB62F6;
 }
 
 .intro p {
     padding: 2em;
+}
+
+.design-examples-wrap {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
 }
 
 .design-examples-wrap h3 {
@@ -139,13 +169,14 @@ p {
     margin-left: 0.5em;
 }
 
-.design-examples-wrap p {
+.project-blurb {
     background-color: #CDFECE;
     color: #0033EE;
     font-size: 0.8em;
+    box-shadow: 10px 10px #FB62F6;
 }
 
-.design-example-blackfriday {
+.design-example-blackfriday, design-example-giveaway {
     padding: 0.5em;
 }
 
@@ -154,10 +185,127 @@ p {
     margin-bottom: 2em;
 }
 
-.job-history-wrap h3 {
-    margin-left: 0.5em;
+.design-example-giveaway2 {
+    margin: auto;
+    margin-bottom: 1em;
 }
 
+.responsive-wrap {
+    padding-right: 0.5em;
+}
+
+.responsive-wrap h3 {
+    padding-bottom: 0.25em;
+}
+
+/*TREAT YO'SELF LOGO*/
+
+.full-width-background {
+    background-image: url('https://media.greenmangaming.com/flat-page/treat-yo-self/brickwall-bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.full-width-background img {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    padding-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+/*SLICK CAROUSEL*/
+
+.slick-slider {
+    width: 80%;
+    margin: 1em auto;
+    padding: 0.5em;
+}
+
+/*BLACK FRIDAY BANNER CSS*/
+
+.black-friday-logo-voucher {
+    margin: 5px auto;
+    text-align: center;
+    overflow: auto;
+}
+
+.black-friday-logo-voucher img {
+    width: 60%
+}
+
+.black-friday-voucher-logged-in {
+    width: 60%;
+    margin: auto;
+    overflow: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #fdd600;
+    border: 4px #000 solid;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.exclusive-voucher {
+    color: #fff;
+    padding: 10px;
+    width: 68%;
+    line-height: 1.6;
+    background-color: #da1106;
+}
+
+.black-friday-voucher-logged-in .your-bf-voucher {
+    border: 2px dashed #fff;
+    padding: 1px 4px;
+    font-weight: 600;
+}
+
+.black-friday-voucher-wrap {
+    width: 100%;
+    background: #000;
+    min-height: 20px;
+    padding: 10px;
+    margin: auto;
+}
+
+.exclusions-apply-front {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom:0;
+    padding: 5px;
+    text-align: center;
+}
+
+.exclusions-apply-front a {
+    color: #fff;
+}
+
+
+/*FOOTER*/
+footer {
+    display: block;
+    text-align: center;
+}
+
+/*RESPONSIVE CODE BOXES*/
+@media screen and (max-width: 672px) {
+    .black-friday-logo-voucher img {
+        width: 100%;
+    }    
+    
+    .full-width-background img {
+        max-width: 80%;
+    }
+    
+}
+
+/*RESPONSIVE*/
 
 @media screen and (max-width:1023px) {
     .intro {
@@ -165,10 +313,9 @@ p {
         margin: 0 auto;
     } 
     
-    .rectangle {
-        margin-right: 0.5em;
+    .image-wrap {
+        margin: 1.5em 0.5em;
     }
-    
     
 }
 
